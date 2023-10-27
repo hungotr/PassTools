@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PassTools</string>
+    <string name="genbutton_text">Make me passwords.</string>
+    <string name="testbutton_text">Test my password.</string>
+    <string name="savebutton_text">Store my password.</string>
+    <string name="recallbutton_text">Where's my password?</string>
+    <string name="signature_text">Created by the Really Cool Team.</string>
+    <string name="title_text1">Here are some passwords.</string>
+    <string name="flavor_text1">Try not to spend them all at once.</string>
+    <string name="title_text2">Test your password below.</string>
+    <string name="flavor_text2">We promise not to steal it.</string>
+    <string name="title_text3">Save your passwords to local disk.</string>
+    <string name="flavor_text3">The one you should trust is yourself.</string>
+    <string name="title_text4">Recall a lost password.</string>
+    <string name="flavor_text4">We all have those days.</string>
+</resources>
