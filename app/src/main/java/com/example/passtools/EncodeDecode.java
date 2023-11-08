@@ -3,6 +3,10 @@ package com.example.passtools;
 import androidx.annotation.NonNull;
 
 import java.nio.charset.StandardCharsets;
+import java.security.InvalidKeyException;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
 
 enum Mode { DECODE, ENCODE }
 
@@ -49,8 +53,8 @@ public abstract class EncodeDecode
         this.cipherbytes = ciphertext.getBytes(StandardCharsets.UTF_8);
     }
 
-    public abstract String encode();
-    public abstract String decode();
+    public abstract String encode() throws IllegalBlockSizeException, BadPaddingException, InvalidKeyException;
+    public abstract String decode() throws InvalidKeyException, IllegalBlockSizeException, BadPaddingException;
 
     @NonNull
     public String toString()
