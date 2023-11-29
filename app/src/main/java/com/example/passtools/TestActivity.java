@@ -18,7 +18,7 @@ public class TestActivity extends AppCompatActivity {
     Button test_Button_REAL, back_button;
     PassTest temp;
     EditText userInput;
-
+    //735-6000
     String userPassword;
 
     @Override
@@ -41,8 +41,6 @@ public class TestActivity extends AppCompatActivity {
              // hideText.setText(userInput.getText());
                 String passwrdRating = testPass(userInput.getText().toString());
                 Toast.makeText(v.getContext(),passwrdRating,Toast.LENGTH_SHORT).show();
-
-
             }
         });
         back_button.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +70,7 @@ public class TestActivity extends AppCompatActivity {
 
     public String testPass(String userPassword){
         temp = new PassTest("abcdefghijklmonpqrstuvwxyz","ABCDEFGHIJKLMOPQRSTUVWXYZ","1234567890","!@#$%^&*");
-        
+       //temp = new PassTest("NULL","NULL","NULL","NULL");
         String passRating = temp.passwordExam(userPassword,this);
 
         return passRating;
